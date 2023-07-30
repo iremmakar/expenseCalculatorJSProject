@@ -1,0 +1,1 @@
+![](harcama.gif)
