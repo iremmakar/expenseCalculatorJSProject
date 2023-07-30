@@ -1,0 +1,1 @@
+![](expenseCalculator/harcama.gif)
