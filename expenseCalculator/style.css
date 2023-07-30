@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(126, 60, 188);
+  gap: 50px;
+  font-family: "Inconsolata";
+}
+
+.heading {
+  color: rgb(44, 11, 75);
+  text-shadow: 2px 2px 20px rgb(44, 11, 75);
+  letter-spacing: 3px;
+}
+
+.container {
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.greet {
+  align-self: start;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.greet input {
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat";
+}
+
+.double {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.form-harcama,
+.form-fiyat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.form-durum {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ekle-btn {
+  background-color: red;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.toplam {
+  background-color: rgb(0, 35, 35);
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 21px;
+}
+
+.toplam span {
+  color: blueviolet;
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  overflow: auto;
+}
+
+.harcama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.harcama h2:nth-child(2) {
+  color: red;
+}
+
+.payed {
+  opacity: 0.7;
+}
+
+.payed h2:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.payed h2:nth-child(2) {
+  color: green;
+}

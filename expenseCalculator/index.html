@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Harcama Hesaplayıcı</h1>
+    <div class="container">
+      <h3 class="greet">Hoşgeldin, <input type="text" /></h3>
+      <form>
+        <div class="double">
+          <div class="form-harcama">
+            <label for="">Harcama:</label>
+            <input type="text" id="harcama" />
+          </div>
+          <div class="form-fiyat">
+            <label for="">Fiyat:</label>
+            <input type="number" id="fiyat" />
+          </div>
+        </div>
+
+        <div class="double">
+          <div class="form-durum">
+            <input type="checkbox" id="status-input" />
+            <label for="status-input">Ödendi</label>
+          </div>
+          <button class="ekle-btn">Ekle</button>
+        </div>
+      </form>
+
+      <div class="toplam">
+        Toplam Harcama: <span id="toplam-bilgi"></span> ₺
+      </div>
+
+      <select name="" id="filter-select">
+        <option value="all">Hepsi</option>
+        <option value="payed">Ödendi</option>
+        <option value="not-payed">Ödenmedi</option>
+      </select>
+
+      <div class="liste"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
